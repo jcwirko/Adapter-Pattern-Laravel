@@ -2,16 +2,16 @@
 
 namespace App\Adapters;
 
-use App\Contracts\CountriesInterface;
+use App\Contracts\CountriesService;
 use Illuminate\Support\Facades\Http;
 
-class RestCountriesAdapter implements CountriesInterface
+class RestCountriesAdapter implements CountriesService
 {
     private $endpoint;
 
     public function __construct()
     {
-        $this->endpoint = 'https://restcountries.eu/rest/v2/';
+        $this->endpoint = config('services.restcountries.endpoint');
     }
 
     public function getCountries()

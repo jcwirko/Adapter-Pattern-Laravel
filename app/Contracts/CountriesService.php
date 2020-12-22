@@ -2,7 +2,7 @@
 
 namespace App\Contracts;
 
-interface CountriesInterface
+interface CountriesService
 {
     public function getCountries();
     public function getCountryByName(string $name);

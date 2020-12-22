@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Adapters\RestCountriesAdapter;
+use App\Contracts\CountriesService;
 
 class CountryController extends Controller
 {
     private $restCountriesAdapter;
 
-    public function __construct(RestCountriesAdapter $restCountriesAdapter)
+    public function __construct(CountriesService $countryService)
     {
-        $this->restCountriesAdapter = $restCountriesAdapter;
+        $this->restCountriesAdapter = $countryService;
     }
 
     public function getCountries()
