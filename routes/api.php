@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/payments', [PaymentController::class, 'store']);
-Route::get('/payments', [PaymentController::class, 'index']);
+Route::get('/countries', [CountryController::class, 'getCountries']);
+Route::get('/country-by-name', [CountryController::class, 'getCountryByName']);
+Route::get('/country-by-capital', [CountryController::class, 'getCountryByCapital']);

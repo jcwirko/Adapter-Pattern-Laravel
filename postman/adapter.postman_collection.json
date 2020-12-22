@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "7d51f9c6-91d3-43c4-a62b-fb258dda5e49",
+		"name": "adapter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "pago",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "asd",
+									"value": "aaa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/countries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "pago",
+									"value": "123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/country-by-name?name=colombia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"country-by-name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "colombia"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Capital",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "pago",
+									"value": "123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/country-by-capital?capital=bue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"country-by-capital"
+							],
+							"query": [
+								{
+									"key": "capital",
+									"value": "bue"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
