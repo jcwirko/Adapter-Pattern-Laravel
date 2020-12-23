@@ -106,7 +106,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/country-by-capital?capital=bue",
+							"raw": "http://localhost:8000/api/country-by-capital?capital=brasilia",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -119,7 +119,7 @@
 							"query": [
 								{
 									"key": "capital",
-									"value": "bue"
+									"value": "brasilia"
 								}
 							]
 						}
