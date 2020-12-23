@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=DEriDJS9IR0
 
 ### Setup
 
- 1. Clonar el projecto `git clone git@github.com:jcwirko/Adapter-Pattern-Laravel.git`
+ 1. Clonar el projecto desde `https://github.com/jcwirko/Adapter-Pattern-Laravel`
  2. Ejecutar `php -S localhost:8000 -t public`
  3. Hay una carpeta postman en el directorio raíz del proyecto, importarlo y ejecutar las colecciones 
     o en el browers. Las 3 rutas son:
